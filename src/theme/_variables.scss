@@ -1,0 +1,11 @@
+// scss-docs-start theme-colors-map
+$palette-colors: (
+    "primary":      ("back": 600, "hover": 800, "text": "text-white", "text-grade": 600, "content-bg": 600),
+    "secondary":    ("back": 600, "hover": 800, "text": "text-white", "text-grade": 600, "content-bg": 600),
+    "success":      ("back": 600, "hover": 800, "text": "text-white", "text-grade": 600, "content-bg": 600),
+    "danger":       ("back": 600, "hover": 800, "text": "text-white", "text-grade": 600, "content-bg": 600),
+    "info":         ("back": 600, "hover": 800, "text": "text-white", "text-grade": 600, "content-bg": 600),
+    "light":        ("back": 200, "hover": 400, "text": "text-black", "text-grade": 400, "content-bg": 200),
+    "warning":      ("back": 600, "hover": 800, "text": "text-white", "text-grade": 600, "content-bg": 600),
+    "dark":         ("back": 600, "hover": 800, "text": "text-white", "text-grade": 600, "content-bg": 600)
+) !default;

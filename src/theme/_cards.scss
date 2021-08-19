@@ -1,0 +1,22 @@
+@import '_variables.scss';
+
+.card {
+    @apply bg-white overflow-hidden shadow divide-y divide-gray-200;
+}
+
+.card-rounded {
+    @apply rounded-lg;
+}
+
+.card-header {
+    @apply px-4 py-5 sm:px-6;
+}
+
+
+.card-body {
+    @apply px-4 py-5 sm:p-6;
+}
+
+.card-footer {
+    @apply px-4 py-4 sm:px-6;
+}

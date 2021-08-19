@@ -1,0 +1,14 @@
+@import '_variables.scss';
+
+@mixin bg-variant($color, $back, $text)
+{
+    @apply bg-#{$color}-#{$back} #{$text};
+}
+
+@each $color, $value in $palette-colors {
+    .bg-#{$color} {
+        @include bg-variant($color, 
+            map.get($value, "content-bg"),
+            map.get($value, "text"));
+    }
+}

@@ -1,1 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
+@use "sass:map";
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+@import "theme/_buttons.scss";
+@import "theme/_text.scss";
+@import "theme/_cards.scss";
+@import "theme/_lists.scss";
+@import "theme/_backgrounds.scss";
+

@@ -1,0 +1,17 @@
+@import '_variables.scss';
+
+.list-group {
+    @apply bg-white shadow overflow-hidden divide-y divide-gray-200;
+}
+
+.list-group-item {
+    @apply block px-4 py-4 sm:px-6;
+}
+
+.list-group-rounded {
+    @apply rounded-lg;
+}
+
+.list-no-divide {
+    @apply divide-y-0;
+}

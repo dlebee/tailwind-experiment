@@ -1,0 +1,26 @@
+@import '_variables.scss';
+
+.btn {
+    @apply inline-flex items-center px-4 py-2 rounded text-sm;
+}
+
+.btn-xs { @apply px-2.5 py-1.5 text-xs font-medium; }
+.btn-sm { @apply px-3 py-2 text-sm font-medium; }
+.btn-md { @apply px-4 py-2 text-base font-medium; }
+.btn-lg { @apply px-6 py-3 text-base font-medium; }
+
+// scss-docs-end theme-color-variables
+
+
+
+@mixin button-variant($color, $back, $hover, $text)
+{
+    @apply bg-#{$color}-#{$back} #{$text} hover:bg-#{$color}-#{$hover};
+}
+
+@each $color, $value in $palette-colors {
+    .btn-#{$color} {
+        @include button-variant($color, map.get($value, "back"), 
+            map.get($value, "hover"), map.get($value, "text"));
+    }
+}
